@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://student-grade-tracker.vercel.app/",
     credentials: true,
   })
 );
@@ -31,6 +31,11 @@ const StudentSchema = new mongoose.Schema({
 const Student = mongoose.model("Student", StudentSchema);
 
 // Route to add student with multiple subject marks
+
+app.get('/', (req, res) => {
+  res.send('Server Working')
+})
+
 app.post("/student", async (req, res) => {
   try {
     const newStudent = new Student(req.body);
