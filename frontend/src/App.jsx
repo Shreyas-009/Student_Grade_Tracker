@@ -27,7 +27,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/student", {
+      await axios.post("https://student-grade-tracker-backend.vercel.app/student", {
         name: formData.name,
         subjects: formData.subjects.map((subject) => ({
           name: subject.name,
@@ -52,7 +52,7 @@ const App = () => {
 
   const fetchAggregateData = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/aggregate");
+      const response = await axios.get("https://student-grade-tracker-backend.vercel.app/aggregate");
       setAggregateResults(response.data);
     } catch (error) {
       console.error("Error fetching aggregate data:", error);

@@ -1,8 +1,8 @@
 # Student Grade Tracker
 
 ## Links
-* Frontend: [Student Grade Tracker Frontend]()  
-* Backend: [Student Grade Tracker Backend]()  
+* Frontend: [Student Grade Tracker Frontend](https://student-grade-tracker.vercel.app/)  
+* Backend: [Student Grade Tracker Backend](https://student-grade-tracker-backend.vercel.app/)  
 
 ## Project Overview
 This project demonstrates cloud-based student grade tracking using MongoDB Atlas with a Node.js/Express.js backend and a React frontend. It showcases the integration of a React frontend with a cloud database to provide functionality for student grade tracking and dynamic dashboards.  
